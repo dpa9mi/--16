@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+ setlocale(LC_ALL, ".1251");
+ system("color 1F");
+
+ int A[100][100];
+ int n, k, i;
+ char z;
+ n = 7;
+  for (k = 0; k < n; k++)
+  {
+   for (i = 0; i < n; i++)
+   {
+    if (k%2==0)
+    A[k][i] = k*n+i+1 ;
+    if (k % 2 != 0)
+     A[k][i] = k*n-i+n;
+    
+    if (A[k][i] >= 1 || A[k][i] <= k*i);
+
+    printf("%5i", A[k][i]);
+   }
+   cout << "\n";
+  }
+ cout << endl << endl << "\t";
+ system("pause");
+ return 0;
+}
